@@ -1,0 +1,10 @@
+@use 'sass:color';
+$rosa: rgb(255, 0, 221);
+
+.white{
+  color: white;
+}
+
+.pink{
+  color: $rosa;
+}
