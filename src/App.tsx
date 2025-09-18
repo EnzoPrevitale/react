@@ -1,14 +1,10 @@
 import './App.css';
-import Botao from './components/botao/Botao';
+import Home from './pages/Home/Home';
 
 function App() {
   return (
-    <>
-      <div>
-      <Botao />
-      </div>
-    </>
-  )
+      <Home />
+  );
 }
 
 export default App;

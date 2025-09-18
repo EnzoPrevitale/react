@@ -1,10 +1,11 @@
-@use 'sass:color';
-$rosa: rgb(255, 0, 221);
+@use '../../variables' as *;
 
-.white{
-  color: white;
+button{
+  padding: 30px;
+  border-radius: 10%;
+  border: none;
 }
 
 .pink{
-  color: $rosa;
+  background-color: $rosaEscuro;
 }
