@@ -8,11 +8,14 @@
 
     .logo{
         margin-left: 50px;
-        width: 7%;
+        width: 10%;
         height: 100%;
         display: flex;
         justify-content: baseline;
         align-items: center;
+        img{
+            width: 100%;
+        }
     }
 
     nav{
@@ -30,7 +33,7 @@
             color: white;
 
             &:hover{
-                color: $vermelhoEscuro;
+                color: $amarelo;
             }
         }
     }

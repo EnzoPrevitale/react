@@ -1,11 +1,12 @@
 import './Header.scss';
+import Logo from '../../assets/logo.png'
 
 function Header() {
     return (
         <>
             <div className="header">
                 <div className='logo'>
-                    <p>Logo</p>
+                    <img src={Logo}></img>
                 </div>
                 <nav>
                     <a href="">Home</a>
