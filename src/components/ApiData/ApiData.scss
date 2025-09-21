@@ -1,1 +1,11 @@
 @use '../../variables' as *;
+
+.types{
+    text-align: center;
+    display: flex;
+    gap: 50px;
+}
+
+.pokemonImage {
+    width: 200px;
+}
