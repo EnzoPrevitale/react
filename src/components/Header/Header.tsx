@@ -10,9 +10,11 @@ function Header() {
                 </div>
                 <nav>
                     <a href="">Home</a>
-                    <a href="">Produtos</a>
+                    <a href="">Pokémon</a>
                 </nav>
             </div>
+            <div className='black'></div>
+            <div className='white'></div>
         </>
     );
 }

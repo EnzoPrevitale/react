@@ -10,7 +10,7 @@ function title(str: string) {
 function ApiData() {
     const [dados, setDados] = useState<any>(null);
     const [shiny, setShiny] = useState<boolean>(false);
-    const [pokemon, setPokemon] = useState<string>("Charmander");
+    const [pokemon, setPokemon] = useState<string | number>("Charmander");
 
     useEffect(() => {
         if(!pokemon) return;
@@ -25,7 +25,14 @@ function ApiData() {
     return (
         <>
             <input type="text" onChange={(e) => setPokemon(e.target.value)} placeholder='Digite o nome de um Pokémon...'></input>
-            <p className='name'>{dados ? title(dados.name) : "Carregando..."}</p>
+
+            <div className='pokemon'>
+                <button onClick={() => setPokemon(dados?.id - 1)}>{'<'}</button>
+                <p className='name'>{dados ? title(dados.name) : "Carregando..."}</p>
+                <span className='index'>{`#${dados?.id}`} </span>
+                <button onClick={() => setPokemon(dados?.id + 1)}>{'>'}</button>
+            </div>
+            
             <p className='types'>{dados?.types?.map((t: any, index: number) => (
                 <div className={`type ${t.type.name}`}><span key={index}>{t.type.name.toUpperCase()}</span></div>
             ))}</p>

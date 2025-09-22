@@ -79,10 +79,43 @@ input[type="text"] {
     margin-bottom: 10px;
     width: 15%;
     font-size: 15px;
+    transition: transform 0.5s;
+
+    &:focus, &:hover {
+        transform: scale(1.1);
+    }
 }
 
-.name{
-    font-size: 25px;
+.pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+    width: 25%;
+    text-align: center;
+
+    button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $cinza;
+        }
+    }
+
+    .name{
+        font-size: 25px;
+    }
+
+    .index {
+        color: $cinza;
+        font-size: 15px;
+    }
 }
 
 .types {
@@ -98,6 +131,7 @@ input[type="text"] {
         width: 50%;
         height: 30px;
         text-align: center;
+        border: 2px solid black;
         border-radius: 10px;
         align-content: center;
 
