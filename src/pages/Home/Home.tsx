@@ -6,6 +6,7 @@ function Home() {
     return (
         <>
             <Header />
+            <h1>Procurar Pokémon</h1>
             <div className='data'>
                 <ApiData />
             </div>
