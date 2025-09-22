@@ -1,0 +1,32 @@
+@use "../../variables.scss" as *;
+
+.pokemonDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    width: 30%;
+    border-bottom: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    img {
+        width: 120px;
+    }
+
+    .pokemonInfo{
+        display: flex;
+        align-items: center;
+        font-size: $fonte;
+        gap: 10px;
+        
+        .number{
+            color: $cinza;
+            font-size: 15px;
+        }
+    }
+}

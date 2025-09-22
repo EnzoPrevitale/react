@@ -10,7 +10,7 @@ function title(str: string) {
 function ApiData() {
     const [dados, setDados] = useState<any>(null);
     const [shiny, setShiny] = useState<boolean>(false);
-    const [pokemon, setPokemon] = useState<string | number>("Charmander");
+    const [pokemon, setPokemon] = useState<string | number>("1");
 
     useEffect(() => {
         if(!pokemon) return;

@@ -1,5 +1,6 @@
 import './Header.scss';
 import Logo from '../../assets/logo.png'
+import{ Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -9,8 +10,8 @@ function Header() {
                     <img src={Logo}></img>
                 </div>
                 <nav>
-                    <a href="">Home</a>
-                    <a href="">Pokémon</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/pokemon">Pokémon</Link>
                 </nav>
             </div>
             <div className='black'></div>
