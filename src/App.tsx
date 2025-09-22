@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home/Home';
-import Pokemon from './pages/Pokemon/pokemon';
+import Pokemon from './pages/Pokemon/Pokemon';
 
 function App() {
   return (
